@@ -18,7 +18,7 @@ async function generate() {
   document.getElementById('upgrade').classList.add('hidden');
 
   // ⚠️ We’ll update this URL AFTER deploying backend
-  const BACKEND_URL = 'http://localhost:3000';
+  const BACKEND_URL = 'https://socialgenie.onrender.com';
 
   try {
     const res = await fetch(BACKEND_URL + '/generate', {
