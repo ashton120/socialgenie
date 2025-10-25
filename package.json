@@ -1,0 +1,15 @@
+{
+  "name": "socialgenie",
+  "version": "1.0.0",
+  "description": "Autonomous social media content generator",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "node backend/server.js",
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  }
+}

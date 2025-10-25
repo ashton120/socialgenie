@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SocialGenie — Free Social Media Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 p-4 md:p-8">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-3xl font-bold text-center mb-2">SocialGenie</h1>
+    <p class="text-gray-600 text-center mb-6">Free captions, hashtags & headlines for Instagram, TikTok, LinkedIn, Twitter</p>
+
+    <div class="bg-white p-6 rounded-lg shadow mb-6">
+      <label class="block mb-2 font-medium">Platform</label>
+      <select id="platform" class="w-full p-2 border rounded mb-4">
+        <option value="instagram">Instagram</option>
+        <option value="tiktok">TikTok</option>
+        <option value="linkedin">LinkedIn</option>
+        <option value="twitter">Twitter (X)</option>
+      </select>
+
+      <label class="block mb-2 font-medium">Describe your post idea</label>
+      <textarea id="input" rows="3" class="w-full p-3 border rounded mb-4" placeholder="e.g., My morning coffee routine that boosts productivity"></textarea>
+
+      <label class="block mb-2 font-medium">Tone (optional)</label>
+      <select id="tone" class="w-full p-2 border rounded mb-4">
+        <option value="default">Default</option>
+        <option value="fun">Fun</option>
+        <option value="professional">Professional</option>
+        <option value="inspirational">Inspirational</option>
+        <option value="punchy">Punchy</option>
+      </select>
+
+      <button onclick="generate()" class="w-full bg-blue-600 text-white py-3 rounded font-medium hover:bg-blue-700 transition">
+        Generate Content (Free)
+      </button>
+    </div>
+
+    <div id="result" class="hidden bg-white p-6 rounded-lg shadow">
+      <h3 class="font-bold text-lg mb-2">Your Content:</h3>
+      <div id="output" class="whitespace-pre-wrap"></div>
+      <p id="usage" class="text-sm text-gray-500 mt-3"></p>
+    </div>
+
+    <div id="upgrade" class="hidden bg-yellow-50 border border-yellow-200 p-4 rounded mt-4 text-center">
+      <p>🔥 You’ve used 3 free generations! Refresh page for 3 more, or <a href="#" class="text-blue-600 underline">go pro soon</a>.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
